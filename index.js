@@ -1,9 +1,9 @@
-let firstCard = 10;
-let secondCard = 7;
-let sum = firstCard + secondCard;
-let hasBlackJack = false;
-let isAlive = true;
-let message = "";
+// let firstCard = 10;
+// let secondCard = 7;
+// let sum = firstCard + secondCard;
+// let hasBlackJack = false;
+// let isAlive = true;
+// let message = "";
 
 // console.log(sum);
 
@@ -41,22 +41,22 @@ let message = "";
 
 // ------------------------------
 
-if (sum <= 20) {
-  message = "Do you want to draw a new card?";
-  console.log(message);
-} else if (sum === 21) {
-  message = "Wohoo! You've got Blackjack!";
-  console.log(message);
-  hasBlackJack = true;
-} else {
-  message = "You're out of the game!";
-  console.log(message);
-  isAlive = false;
-}
+// if (sum <= 20) {
+//   message = "Do you want to draw a new card?";
+//   console.log(message);
+// } else if (sum === 21) {
+//   message = "Wohoo! You've got Blackjack!";
+//   console.log(message);
+//   hasBlackJack = true;
+// } else {
+//   message = "You're out of the game!";
+//   console.log(message);
+//   isAlive = false;
+// }
 
-console.log(hasBlackJack);
-console.log(isAlive);
-console.log(message);
+// console.log(hasBlackJack);
+// console.log(isAlive);
+// console.log(message);
 
 // ------------------------------
 
@@ -67,3 +67,31 @@ console.log(3 < 0); // false
 console.log(3 >= 3); // true
 console.log(11 <= 11); // true
 console.log(3 <= 2); //false
+
+// ------------------------------
+
+let firstCard = 10;
+let secondCard = 7;
+let sum = firstCard + secondCard;
+let hasBlackJack = false;
+let isAlive = true;
+let message = "";
+
+function startGame() {
+  if (sum <= 20) {
+    message = "Do you want to draw a new card?";
+    console.log(message);
+  } else if (sum === 21) {
+    message = "Wohoo! You've got Blackjack!";
+    console.log(message);
+    hasBlackJack = true;
+  } else {
+    message = "You're out of the game!";
+    console.log(message);
+    isAlive = false;
+  }
+
+  console.log(hasBlackJack);
+  console.log(isAlive);
+  console.log(message);
+}
