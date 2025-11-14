@@ -77,7 +77,7 @@ let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
-let card = 7;
+let card = 6;
 
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
@@ -113,7 +113,10 @@ function renderGame() {
 function newCard() {
   console.log("Drawing a new card from the deck!");
 
+  cards.push(card);
+  console.log(cards);
+
   sum += card;
 
-  startGame();
+  renderGame();
 }
