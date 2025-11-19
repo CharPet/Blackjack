@@ -18,3 +18,54 @@ for (let i = 0; i < sentence.length; i++) {
 }
 
 // --------------------------------------------------
+
+let player1Time = 102;
+let player2Time = 107;
+
+function getFastestRaceTime() {
+  if (player1Time < player2Time) {
+    return player1Time;
+  } else if (player2Time < player1Time) {
+    return player2Time;
+  } else {
+    return player1Time;
+  }
+}
+
+let fastestRace = getFastestRaceTime();
+console.log(fastestRace);
+
+// --------------------------------------------------
+
+function getTotalRaceTime() {
+  return player1Time + player2Time;
+}
+
+let totalRaceTime = getTotalRaceTime();
+console.log(totalRaceTime);
+
+// --------------------------------------------------
+
+let randomNumber = Math.random() * 6;
+console.log(randomNumber);
+
+// --------------------------------------------------
+
+let flooredNumber = Math.floor(3.4567);
+console.log(flooredNumber);
+
+// --------------------------------------------------
+
+let randomNumber2 = Math.floor(Math.random() * 6 + 1);
+console.log(randomNumber2);
+
+// --------------------------------------------------
+
+function rollDice() {
+  let dice = Math.floor(Math.random() * 6 + 1);
+  return dice;
+}
+
+console.log(rollDice());
+
+// --------------------------------------------------

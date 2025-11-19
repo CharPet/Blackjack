@@ -84,7 +84,9 @@ let sumEl = document.getElementById("sum-el");
 // let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.getElementById("cards-el");
 
-function getRandomCard() {}
+function getRandomCard() {
+  return 5;
+}
 
 function startGame() {
   renderGame();
