@@ -84,7 +84,15 @@ let sumEl = document.getElementById("sum-el");
 // let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.getElementById("cards-el");
 
-console.log(cards);
+let player = {
+  name: "Per",
+  chips: 145,
+};
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;
+
+// console.log(cards);
 
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13 + 1);
