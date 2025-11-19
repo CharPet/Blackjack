@@ -120,14 +120,14 @@ function renderGame() {
 
   if (sum <= 20) {
     message = "Do you want to draw a new card?";
-    console.log(message);
+    // console.log(message);
   } else if (sum === 21) {
     message = "You've got Blackjack!";
-    console.log(message);
+    // console.log(message);
     hasBlackJack = true;
   } else {
     message = "You're out of the game!";
-    console.log(message);
+    // console.log(message);
     isAlive = false;
   }
 
@@ -138,10 +138,13 @@ function renderGame() {
 
 function newCard() {
   // console.log("Drawing a new card from the deck!");
-  let card = getRandomCard();
-  sum += card;
-  cards.push(card);
-  console.log(cards);
 
-  renderGame();
+  if (isAlive && !hasBlackJack) {
+    let card = getRandomCard();
+    sum += card;
+    cards.push(card);
+    // console.log(cards);
+
+    renderGame();
+  }
 }
